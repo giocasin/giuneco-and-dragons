@@ -1,0 +1,42 @@
+body {
+    box-sizing: initial;
+    margin: 0;
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+}
+
+.main-menu {
+    background-color: #1A1E23;
+    box-sizing: initial;
+    height: 100vh;
+    color: whitesmoke;
+}
+
+.entry-container {
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.entry-container a {
+    margin-top: 10em;
+    padding: 1em;
+    line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+    background-size:cover;
+    vertical-align: bottom;
+    width: 30%;
+    max-width: 300px;
+    box-shadow: 0 0 8px 8px #4B5E66 inset;
+    border-radius: 35px;
+}

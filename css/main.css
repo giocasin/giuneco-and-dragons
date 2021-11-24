@@ -25,12 +25,10 @@ body {
     padding: 1em;
     line-height: 50px;
 	height: 100%;
-	font-size: 15px;
 	display: inline-block;
 	position: relative;
 	z-index: 1;
 	text-decoration: none;
-	text-transform: uppercase;
 	text-align: center;
 	color: white;
 	cursor: pointer;
@@ -40,4 +38,10 @@ body {
     max-width: 300px;
     box-shadow: 0 0 25px 8px #4B5E66 inset;
     border-radius: 35px;
+}
+
+.adventure-title {
+    font-family: 'Kings', cursive;
+    font-size: 1.8em;
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
 }

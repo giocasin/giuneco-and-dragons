@@ -125,8 +125,10 @@
 
 .circular-landscape {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 50%;
+  height: 50%;
+  max-width: 250px;
+  max-height: 250px;
   overflow: hidden;
   border-radius: 50%;
   border: 1px solid black;

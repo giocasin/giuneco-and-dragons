@@ -8,6 +8,31 @@
   margin: 0 auto;
 }
 
+.characters-cont {
+  background-color: #474e5d;
+  display: flex;
+  width: 100%;
+}
+
+.character-data {
+  flex: 1;
+}
+
+.character-data > .circular-landscape {
+  max-height: none;
+}
+
+.character-name {
+  text-align: center;
+}
+
+.character-name > h2 {
+  font-family: 'Kings', cursive;
+  font-size: 1.3em;
+  color: #ffad33;
+  text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
 .timeline-cont {
   background-color: #474e5d;
 }

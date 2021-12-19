@@ -45,3 +45,13 @@ body {
     font-size: 1.8em;
     text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
 }
+
+.title-container {
+    box-sizing: initial;
+    position: relative;
+    background-color: #474e5d;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 0;
+    text-align: center;
+}

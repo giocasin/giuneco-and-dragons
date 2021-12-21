@@ -35,6 +35,7 @@ body {
     background-size:cover;
     vertical-align: bottom;
     width: 30%;
+    min-width: 180px;
     max-width: 300px;
     box-shadow: 0 0 25px 8px #4B5E66 inset;
     border-radius: 35px;

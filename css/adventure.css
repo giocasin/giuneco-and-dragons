@@ -12,6 +12,7 @@
   background-color: #474e5d;
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .character-data {

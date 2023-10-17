@@ -60,3 +60,13 @@ body {
 .legendary {
     color: #ff8000;
 }
+
+.mid-centered {
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+}

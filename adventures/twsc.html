@@ -21,19 +21,42 @@
             <img src="../img/characters/npcs/shinebright_pecora.jpeg" usemap="#sheep" style="max-width: 100%; max-height: 100vw;" width="1024px"/>
 
             <map name="sheep">
-                <area shape="rect" coords="50, 265, 900, 600" alt="Pecora" onclick="new Audio('../media/Sheep-Lamb-Bah.mp3').play()">
+                <area shape="rect" coords="50, 265, 900, 600" alt="Pecora" onclick="giveScroll()">
                 <area shape="rect" coords="550, 565, 900, 1000" alt="Pergamena" onclick="giveScroll()">
             </map>
         </div>
         <div id="scroll" class="hidden-scroll">
-
+           <p class="scroll-title">Parlare con Animali</p> 
+           <p class="scroll-data">Primo Livello - Divinazione (Modificata)</p>
+           <p class="scroll-data-list">
+            <ul>
+                <li>Tempo di lancio: 1 Azione</li>
+                <li>Bersagli: Tutte le creature entro un cubo di 5m</li>
+                <li>Componenti: V, S</li>
+                <li>Durata: 4 ore</li>
+            </ul>
+           </p>
+           <p class="scroll-desc">
+                Ottieni l'abilità di comprendere e comunicare verbalmente con creature di tipo Bestia per tutta la durata della magia. La conoscenza e l'abilità di ogni bestia è limitata dalla sua intelligenza. Ogni bestia può fornire informazioni di vario genere, come luoghi e mostri.
+           </p>
+           <p class="scroll-little-desc" id="att">
+            Attenzione: Questa pergamena è stata modificata per estendere l'uso e la durata. Il creatore non è responsabile di eventuali danni dato un errato utilizzo.
+           </p>
         </div>
 
         <script type="text/javascript">
             function giveScroll() {
-                if (rollD20() > 12) {
+                var rolledNumber = rollD20();
+                if (rolledNumber >= 13) {
                     document.getElementById("scroll").style.opacity = 1;
                     document.getElementById("scroll").style.visibility = "visible";
+                    document.getElementById("att").style.fontSize = "0.8em";
+                    setInterval(function() {
+                        document.getElementById("att").style.fontSize = (document.getElementById("att").style.fontSize.replace("em", "") - 0.1) + "em";
+                    }, 1500);
+                }
+                else if (rolledNumber >= 6 && rolledNumber < 13) {
+                    new Audio('../media/Sheep-Lamb-Bah.mp3').play();
                 }
                 else {
                     new Audio('../media/funny-goat-sound.mp3').play();
